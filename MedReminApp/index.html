@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MedReminapp</title>
+</head>
+<body>
+    <div class="background-image">
+    <div class="container">
+        <h1>Medication Reminder App</h1>
+        <form id="medForm">
+            <label for="medName">Medication Name:</label>
+            <input type="text" id="medName" required>
+
+            <label for="medTime">Reminder Time:</label>
+            <input type="time" id="medTime" required>
+
+            <label for="medSpecialty">Medical dosage:</label>
+            <input type="number" required>
+           
+                
+
+            
+
+            <button type="button" onclick="addMedication()">Add Medication</button>
+            <button type="button" onclick="resetAllMedications()">Reset All Medications</button>
+        </form>
+
+        <ul id="medList"></ul>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
